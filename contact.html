@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Nitish Jain</title>
+  <meta name="description" content="Contact Nitish Jain for performances, teaching, research, artistic consultation, and collaborative projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./public/style/contact.css" />
+</head>
+<body>
+  <main class="contact-page">
+    <img
+      class="contact-page__image"
+      src="./public/images/contact/IMG_7632_©Magdalena_Kotárková_edit DB.webp"
+      alt="Nitish Jain portrait"
+    />
+
+    <header class="contact-page__header" aria-label="Primary">
+      <div class="contact-page__navbar">
+        <a class="contact-page__brand" href="index.html" aria-label="Nitish Jain home">
+          <img src="./public/logo_white.svg" alt="Nitish Jain" />
+        </a>
+
+        <nav class="contact-page__links nav_section" id="nav_section">
+          <ul class="nav_list">
+            <li class="nav_links"><a href="index.html">Work</a></li>
+            <li class="nav_links"><a href="about.html">About</a></li>
+            <li class="nav_links icon_active"><a href="contact.html" class="is-active">Get in Touch</a></li>
+          </ul>
+        </nav>
+
+        <a href="javascript:void(0);" class="contact-page__icon icon" onclick="myFunction()" aria-label="Toggle navigation">
+          <i class="ri-menu-3-line"></i>
+        </a>
+      </div>
+    </header>
+
+    <section class="contact-page__content" aria-label="Contact description">
+      <p>I welcome inquiries related to performance making, teaching, research, and artistic consultation.</p>
+      <p>For institutions, festivals & curators: I am available for commissioned performances, residencies, and collaborative projects exploring sensory experience, postcolonial thought, and ecological wellbeing.</p>
+      <p>For academic and educational contexts: I offer workshops, performance lectures, and interdisciplinary projects connecting architecture, scenography, and multisensory practice.</p>
+      <p>For independent artists: I offer artistic mentoring, consultation, and other collaborative support in developing new works.</p>
+      <p class="contact-page__closing">I am also open to conversations that don't yet have a name.<br /> <br /> <span class="contact-page__reach">You can reach me at:</span> <a class="contact-page__email" href="mailto:nitish@studiomorethanthat.com">nitish@studiomorethanthat.com</a></p>
+    </section>
+  </main>
+  <script>
+    function myFunction() {
+      var x = document.getElementsByClassName("nav_section")[0];
+      var icon = document.getElementsByClassName("icon")[0].children[0];
+
+      if (x.style.display === "block") {
+        x.style.display = "none";
+        icon.className = "ri-menu-3-line";
+      } else {
+        x.style.display = "block";
+        icon.className = "ri-close-line";
+      }
+    }
+  </script>
+</body>
+</html>
